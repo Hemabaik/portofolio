@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hema</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bio, .projects, .contact {
+            margin-bottom: 3rem;
+        }
+
+        .bio h2, .projects h2, .contact h2 {
+            color: #333;
+        }
+
+        .bio .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem 0;
+        }
+
+        .bio .details {
+            margin-top: 1rem;
+        }
+
+        .projects .project {
+            display: inline-block;
+            width: 30%;
+            margin: 1rem;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-  
+    <header>
+        <h1>Portofolio Saya</h1>
+    </header>
+
+    <nav>
+        <a href="#bio">Biodata</a>
+        <a href="#projects">Proyek Saya</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="content">
+        <!-- Biodata -->
+        <section class="bio" id="bio">
+            <h2>Biodata Saya</h2>
+            <img src="https://via.placeholder.com/150" alt="Foto Saya" class="photo">
+            <div class="details">
+                <p><strong>Nama:</strong> [Nama Anda]</p>
+                <p><strong>Tempat, Tanggal Lahir:</strong> [Tempat Lahir], [Tanggal Lahir]</p>
+                <p><strong>Alamat:</strong> [Alamat Anda]</p>
+                <p><strong>Email:</strong> [email@domain.com]</p>
+                <p><strong>Telepon:</strong> [Nomor Telepon]</p>
+                <p><strong>Keahlian:</strong> [Daftar Keahlian, seperti HTML, CSS, JavaScript, dsb.]</p>
+                <p><strong>Ringkasan:</strong> Saya adalah seorang [profesi atau bidang keahlian] dengan pengalaman di bidang [sebutkan bidang]. Saya memiliki passion untuk [jelaskan minat atau motivasi Anda].</p>
+            </div>
+        </section>
+
+        <!-- Proyek Saya -->
+        <section class="projects" id="projects">
+            <h2>Proyek Saya</h2>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Proyek 2">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Proyek 3">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section class="contact" id="contact">
+            <h2>Kontak Saya</h2>
+            <form action="mailto:email@example.com" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 [Nama Anda]. Semua hak cipta dilindungi.</p>
+    </footer>
 </body>
 </html>
